@@ -15,6 +15,12 @@ const Footer = () => {
   return (
     <>
       <Stack
+        sx={{
+          display: {
+            sm: "flex",
+            md: "none",
+          },
+        }}
         className="fixed-bottom my-3"
         direction="row"
         spacing={4}
