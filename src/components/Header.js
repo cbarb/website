@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./App.css";
+import "../App.css";
 import { Container, Button, Stack } from "@mui/material";
 
 const Header = () => {
