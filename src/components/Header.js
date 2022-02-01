@@ -26,16 +26,16 @@ const Header = () => {
     },
   };
   return (
-    <Container>
-      <div
-        className="w-100"
-        style={{
-          display: "flex",
-          // position: "absolute",
-          // top: "0",
-          // zIndex: "1030",
-        }}
-      >
+    <div
+      className="w-100 sticky-top "
+      style={{
+        display: "flex",
+        // position: "absolute",
+        // top: "0",
+        // zIndex: "1030",
+      }}
+    >
+      <Container sx={{ display: "flex" }}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 383.96 341.82"
@@ -87,8 +87,8 @@ const Header = () => {
             </Button>
           ))}
         </Stack>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 };
 

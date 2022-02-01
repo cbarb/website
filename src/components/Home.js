@@ -36,7 +36,10 @@ const Home = () => {
     },
   };
   return (
-    <div className="heading-text" style={{ color: "rgba(255, 255, 255, 0.7" }}>
+    <div
+      className="heading-text page-height"
+      style={{ color: "rgba(255, 255, 255, 0.7" }}
+    >
       <motion.h1 variants={headingVariants} initial="initial" animate="animate">
         HI THERE,
       </motion.h1>
@@ -48,12 +51,13 @@ const Home = () => {
         WELCOME TO MY SITE
       </motion.h1>
       <div className="">
-        <motion.div
+        <motion.a
+          src="/#projects"
           variants={arrowVariants}
           initial="initial"
           animate="animate"
           className="scroll-down "
-        ></motion.div>
+        ></motion.a>
       </div>
     </div>
   );

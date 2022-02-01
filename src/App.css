@@ -24,17 +24,16 @@
     flex-direction: column;
 }
 
+.page-height {
+    height: calc(100vh - 75.61px);
+}
+
 .arrow {
     opacity: 0.51;
 }
 
-body {
-    background-color: #000;
-    overflow: hidden;
-}
-
 .scroll-down {
-    /* position: absolute; */
+    position: absolute;
     left: 50%;
     bottom: 20%;
     display: block;
