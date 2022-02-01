@@ -1,8 +1,8 @@
-import Header from "./Header";
+import Header from "./components/Header";
 import { Container } from "@mui/material";
-import Home from "./Home";
-import Footer from "./Footer";
-import Projects from "./Projects";
+import Home from "./components/Home";
+import Footer from "./components/Footer";
+import Projects from "./components/Projects";
 
 function App() {
   return (
