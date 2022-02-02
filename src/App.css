@@ -25,7 +25,11 @@
 }
 
 .page-height {
-    height: calc(100vh - 111.9px);
+    height: calc(100vh - 75.61px);
+}
+
+.text-color {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .arrow {
@@ -34,7 +38,7 @@
 
 .scroll-down {
     position: absolute;
-    left: 50%;
+    left: 49%;
     bottom: 20%;
     display: block;
     text-align: center;

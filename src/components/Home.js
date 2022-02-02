@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Home = () => {
   const headingVariants = {
@@ -10,6 +11,7 @@ const Home = () => {
       transition: { duration: 1, delay: 2, ease: "easeInOut" },
     },
   };
+
   const heading2Variants = {
     initial: { opacity: 0, y: 10 },
     animate: {
@@ -28,10 +30,6 @@ const Home = () => {
         delay: 5,
         ease: "easeIn",
         fade: 1,
-        // repeat: Infinity,
-        // type: "bounce",
-        // stiffness: 300,
-        // damping: 25,
       },
     },
   };
@@ -50,14 +48,15 @@ const Home = () => {
       >
         WELCOME TO MY SITE
       </motion.h1>
-      <div className="">
-        <motion.a
-          src="/#projects"
-          variants={arrowVariants}
-          initial="initial"
-          animate="animate"
-          className="scroll-down "
-        ></motion.a>
+      <div>
+        <Link to="projects">
+          <motion.a
+            variants={arrowVariants}
+            initial="initial"
+            animate="animate"
+            className="scroll-down "
+          ></motion.a>
+        </Link>
       </div>
     </div>
   );

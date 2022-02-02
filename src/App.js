@@ -11,7 +11,6 @@ function App() {
       <Container>
         <Home />
         <Projects />
-        <Projects />
       </Container>
       <Footer />
     </div>

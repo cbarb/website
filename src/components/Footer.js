@@ -16,12 +16,13 @@ const Footer = () => {
     <>
       <Stack
         sx={{
+          background: "rgb(3, 17, 36)",
           display: {
             sm: "flex",
             md: "none",
           },
         }}
-        className="fixed-bottom my-3"
+        className="fixed-bottom py-3"
         direction="row"
         spacing={4}
         alignItems={"center"}
