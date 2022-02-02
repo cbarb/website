@@ -1,9 +1,10 @@
 import React from "react";
 import { Stack, Button } from "@mui/material";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Footer = () => {
-  const links = ["Projects", "About", "Contact"];
+  const links = ["projects", "about", "contact"];
 
   const linkVariants = {
     initial: { opacity: 0, y: 40 },
@@ -30,17 +31,15 @@ const Footer = () => {
       >
         {links.map((link, i) => (
           <Button
-            component={motion.a}
+            component={motion.div}
             variants={linkVariants}
             initial="initial"
             animate="animate"
-            whileHover={{ scale: 1.2 }}
             transition={{ duration: 1, delay: 2 + i * 0.25, ease: "easeInOut" }}
             key={link}
             style={{ color: "rgba(255,255,255,0.7)" }}
           >
-            {" "}
-            {link}{" "}
+            <Link to={link}>{link}</Link>
           </Button>
         ))}
       </Stack>
