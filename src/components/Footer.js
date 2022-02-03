@@ -3,9 +3,8 @@ import { Stack, Button } from "@mui/material";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
-const Footer = () => {
+const Footer = ({projectLink}) => {
   const links = ["projects", "about", "contact"];
-
   const linkVariants = {
     initial: { opacity: 0, y: 40 },
     animate: {
@@ -13,6 +12,7 @@ const Footer = () => {
       y: 0,
     },
   };
+  console.log(projectLink, "from footer");
   return (
     <>
       <Stack
@@ -37,9 +37,9 @@ const Footer = () => {
             animate="animate"
             transition={{ duration: 1, delay: 2 + i * 0.25, ease: "easeInOut" }}
             key={link}
-            style={{ color: "rgba(255,255,255,0.7)" }}
+            color={(projectLink === link) ? "primary"  : "secondary"}
           >
-            <Link to={link} smooth={true} duration={400}>
+            <Link to={link} smooth={true} duration={400} >
               {link}
             </Link>
           </Button>

@@ -50,12 +50,12 @@ const Home = () => {
       </motion.h1>
       <div>
         <Link to="projects" smooth={true} duration={400}>
-          <motion.a
+          <motion.div
             variants={arrowVariants}
             initial="initial"
             animate="animate"
             className="scroll-down "
-          ></motion.a>
+          ></motion.div>
         </Link>
       </div>
     </div>
