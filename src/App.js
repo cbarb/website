@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import { Container } from "@mui/material";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
+import About from "./components/About";
 import Projects from "./components/Projects";
 import { useEffect, useState } from "react";
 import { createTheme, ThemeProvider } from "@mui/material";
@@ -36,6 +37,7 @@ function App() {
         <Container>
           <Home />
           <Projects value={inView} onPageChange={handlePageChange} />
+          <About value={inView} onPageChange={handlePageChange} />
         </Container>
         <Footer projectLink={inView}/>
       </div>
