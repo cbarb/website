@@ -49,7 +49,7 @@ const Home = () => {
         WELCOME TO MY SITE
       </motion.h1>
       <div>
-        <Link to="projects">
+        <Link to="projects" smooth={true} duration={400}>
           <motion.a
             variants={arrowVariants}
             initial="initial"

@@ -39,7 +39,9 @@ const Footer = () => {
             key={link}
             style={{ color: "rgba(255,255,255,0.7)" }}
           >
-            <Link to={link}>{link}</Link>
+            <Link to={link} smooth={true} duration={400}>
+              {link}
+            </Link>
           </Button>
         ))}
       </Stack>

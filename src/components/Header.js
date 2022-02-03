@@ -11,6 +11,7 @@ const Header = () => {
       x: screenWidth > 1200 ? `500px` : "calc(50vw - 86px)",
       y: "calc(50vh - 62px)",
       width: "140px",
+      height: "124.63px",
       originX: "70px",
       originY: "62px",
     },
@@ -18,6 +19,7 @@ const Header = () => {
       x: 0,
       y: 0,
       width: "40px",
+      height: "35px",
       transition: {
         duration: 0.8,
         delay: 1.5,
@@ -56,11 +58,11 @@ const Header = () => {
         className="header-container"
         sx={{
           display: "flex",
-          background:
-            "linear-gradient(0deg, rgba(123,97,255,0) 0%, rgba(3,17,36,1) 100%, rgba(220,145,1,1) 100%, rgba(0,212,255,1) 100%);",
+          background: "rgb(3, 17, 36)",
         }}
       >
         <motion.svg
+          width={40}
           variants={logoVariants}
           initial="initial"
           animate="animate"
@@ -68,7 +70,6 @@ const Header = () => {
           viewBox="0 0 383.96 341.82"
           style={{ marginTop: "20px", marginBottom: "20px" }}
         >
-          <defs></defs>
           <g id="Layer_2" data-name="Layer 2">
             <g id="Layer_1-2" data-name="Layer 1">
               <motion.path
